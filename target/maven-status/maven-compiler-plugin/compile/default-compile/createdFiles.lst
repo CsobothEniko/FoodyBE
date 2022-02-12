@@ -1,0 +1,9 @@
+com\foody\be\model\Vitamin.class
+com\foody\be\model\Ch.class
+com\foody\be\controller\ChController.class
+com\foody\be\model\Vegetable.class
+com\foody\be\model\Fat.class
+com\foody\be\model\Fruit.class
+com\foody\be\repository\ChRepository.class
+com\foody\be\BeApplication.class
+com\foody\be\model\Protein.class

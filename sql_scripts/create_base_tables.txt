@@ -1,0 +1,53 @@
+create table ch (
+	id SERIAL PRIMARY KEY,
+	name varchar(255),
+	quantity integer,
+	quantity_type varchar(255),
+	calorie integer,
+	type varchar(255)
+)
+
+create table fat (
+	id SERIAL PRIMARY KEY,
+	name varchar(255),
+	quantity integer,
+	quantity_type varchar(255),
+	calorie integer,
+	type varchar(255)
+)
+
+create table fruit (
+	id SERIAL PRIMARY KEY,
+	name varchar(255),
+	quantity integer,
+	quantity_type varchar(255),
+	calorie integer,
+	type varchar(255)
+)
+
+create table protein (
+	id SERIAL PRIMARY KEY,
+	name varchar(255),
+	quantity integer,
+	quantity_type varchar(255),
+	calorie integer,
+	type varchar(255)
+)
+
+create table vegetable (
+	id SERIAL PRIMARY KEY,
+	name varchar(255),
+	quantity integer,
+	quantity_type varchar(255),
+	calorie integer,
+	type varchar(255)
+)
+
+create table vitamin (
+	id SERIAL PRIMARY KEY,
+	name varchar(255),
+	quantity integer,
+	quantity_type varchar(255),
+	calorie integer,
+	type varchar(255)
+)
