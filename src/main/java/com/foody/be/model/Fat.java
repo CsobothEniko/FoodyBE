@@ -5,7 +5,22 @@ import javax.persistence.*;
 @Entity
 @Table(name = "fat")
 public class Fat {
+
+    public Fat(){
+        //super();
+    }
+
+    public Fat(String name, Integer quantity, String quantityType, Integer calorie, String type) {
+        //super();
+        this.name = name;
+        this.quantity = quantity;
+        this.quantityType = quantityType;
+        this.calorie = calorie;
+        this.type = type;
+    }
+
     @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "id")
     private Integer id;
 
