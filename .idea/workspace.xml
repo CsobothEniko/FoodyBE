@@ -5,17 +5,27 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="7dd0462d-1fb4-4a6c-a8bb-1c4ad21146a1" name="Default Changelist" comment="target folder gitignore-hoz hozzáadása">
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/be.iml" beforeDir="false" afterPath="$PROJECT_DIR$/be.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sql_scripts/create_base_tables.txt" beforeDir="false" afterPath="$PROJECT_DIR$/sql_scripts/create_base_tables.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/foody/be/controller/ChController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/foody/be/controller/ChController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/foody/be/controller/FatController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/foody/be/controller/FatController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/foody/be/controller/FruitController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/foody/be/controller/FruitController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/foody/be/controller/ProteinController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/foody/be/controller/ProteinController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/foody/be/controller/VegetableController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/foody/be/controller/VegetableController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/foody/be/controller/VitaminController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/foody/be/controller/VitaminController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/foody/be/dto/DietPlan.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/foody/be/dto/DP.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/foody/be/model/Ch.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/foody/be/model/Ch.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/foody/be/repository/ChRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/foody/be/repository/ChRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/foody/be/repository/FatRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/foody/be/repository/FatRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/foody/be/repository/FruitRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/foody/be/repository/FruitRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/foody/be/repository/ProteinRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/foody/be/repository/ProteinRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/foody/be/repository/VegetableRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/foody/be/repository/VegetableRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/foody/be/repository/VitaminRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/foody/be/repository/VitaminRepository.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/foody/be/controller/ChController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/foody/be/controller/ChController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/foody/be/controller/FatController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/foody/be/controller/FatController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/foody/be/controller/FruitController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/foody/be/controller/FruitController.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/foody/be/repository/ChRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/foody/be/repository/ChRepository.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -161,12 +171,24 @@
     <property name="aspect.path.notification.shown" value="true" />
     <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1642620670362" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/java/com/foody/be/model" />
+    <property name="nodejs_package_manager_path" value="npm" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.0" />
     <property name="settings.editor.selected.configurable" value="editor.preferences.import" />
   </component>
   <component name="RunManager" selected="Spring Boot.start">
+    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
+      <option name="arquillianRunConfiguration">
+        <value>
+          <option name="containerStateName" value="" />
+        </value>
+      </option>
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration default="true" type="MavenRunConfiguration" factoryName="Maven">
       <MavenSettings>
         <option name="myGeneralSettings" />
@@ -249,7 +271,7 @@
       <workItem from="1644519966544" duration="2934000" />
       <workItem from="1644522962305" duration="8921000" />
       <workItem from="1645444137219" duration="12628000" />
-      <workItem from="1645642649381" duration="13157000" />
+      <workItem from="1645642649381" duration="18381000" />
     </task>
     <task id="LOCAL-00001" summary="DATABASE CRUD">
       <created>1644671102067</created>
@@ -279,7 +301,14 @@
       <option name="project" value="LOCAL" />
       <updated>1644697775434</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="dietPlan + plan tables">
+      <created>1646052082196</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1646052082196</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
@@ -349,7 +378,8 @@
     <MESSAGE value="DATABASE CRUD" />
     <MESSAGE value="DATABASE CRUD a többi modelhez" />
     <MESSAGE value="target folder gitignore-hoz hozzáadása" />
-    <option name="LAST_COMMIT_MESSAGE" value="target folder gitignore-hoz hozzáadása" />
+    <MESSAGE value="dietPlan + plan tables" />
+    <option name="LAST_COMMIT_MESSAGE" value="dietPlan + plan tables" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/src/main/java/com/foody/be/BeApplication.java">

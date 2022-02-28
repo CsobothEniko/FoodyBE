@@ -10,14 +10,10 @@ import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
-import java.util.HashMap;
-import java.util.List;
-import java.util.Map;
-import java.util.NoSuchElementException;
+import java.util.*;
 
 @RestController
 @RequestMapping("/ch")
-//@RequiredArgsConstructor
 public class ChController {
 
     @Autowired
@@ -36,15 +32,18 @@ public class ChController {
         return chRepository.getChAndFat();
     }
 
-    //
-    @GetMapping("/random")
-    public RandomCh randomCh(){
-        return chRepository.getRandomCh();
+    @GetMapping("/{id}")
+    public Ch get(@PathVariable Integer id) {
+        Ch ch = chRepository.findById(id).get();
+        System.out.println("ch: " + ch);
+        return ch;
     }
 
-    @GetMapping("/{id}")
-    public Ch get(@PathVariable Long id) {
-        Ch ch = chRepository.findById(id).get();
+    @GetMapping("/randomCh")
+    public Ch getRandomId() {
+        Random random = new Random();
+        Integer randomId = random.nextInt(2) +1;
+        Ch ch = chRepository.findById(randomId).get();
         System.out.println("ch: " + ch);
 
         return ch;
@@ -58,7 +57,7 @@ public class ChController {
 
     @PutMapping("/update/{id}")
     public ResponseEntity<Ch> update(
-            @PathVariable Long id,
+            @PathVariable Integer id,
             @RequestBody Ch detailsOfCh){
         Ch ch = chRepository.findById(id).get();
         ch.setName(detailsOfCh.getName());
@@ -73,13 +72,34 @@ public class ChController {
     }
 
     @DeleteMapping("/{id}")
-    public Map<String, Boolean> delete(@PathVariable Long id){
+    public Map<String, Boolean> delete(@PathVariable Integer id){
         Ch ch = chRepository.findById(id).get();
 
         chRepository.delete(ch);
         Map<String, Boolean> response = new HashMap<>();
         response.put("deleted", Boolean.TRUE);
         return response;
+    }
+
+    @GetMapping("/breakfast")
+    //@Transactional
+    public List<Ch> listAllByBreakfast(){
+        List<Ch> list = chRepository.getAllChByBreakfast();
+        return list;
+    }
+
+    @GetMapping("/lunch")
+    //@Transactional
+    public List<Ch> listAllByLunch(){
+        List<Ch> list = chRepository.getAllChByLunch();
+        return list;
+    }
+
+    @GetMapping("/dinner")
+    //@Transactional
+    public List<Ch> listAllByDinner(){
+        List<Ch> list = chRepository.getAllChByDinner();
+        return list;
     }
 }
 

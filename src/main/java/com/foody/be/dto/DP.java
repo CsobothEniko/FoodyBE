@@ -6,7 +6,7 @@ import lombok.NoArgsConstructor;
 
 @NoArgsConstructor
 @Data
-public class DietPlan {
+public class DP {
     private Ch ch;
     private Fat fat;
     private Fruit fruit;
@@ -14,7 +14,7 @@ public class DietPlan {
     private Vegetable vegetable;
     private Vitamin vitamin;
 
-    public DietPlan(Ch ch, Fat fat, Fruit fruit, Protein protein, Vegetable vegetable, Vitamin vitamin) {
+    public DP(Ch ch, Fat fat, Fruit fruit, Protein protein, Vegetable vegetable, Vitamin vitamin) {
         this.ch = ch;
         this.fat = fat;
         this.fruit = fruit;

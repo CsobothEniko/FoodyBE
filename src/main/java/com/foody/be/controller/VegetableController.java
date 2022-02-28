@@ -9,6 +9,7 @@ import org.springframework.web.bind.annotation.*;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
+import java.util.Random;
 
 @RestController
 @RequestMapping("/vegetable")
@@ -25,7 +26,7 @@ public class VegetableController {
     }
 
     @GetMapping("/{id}")
-    public Vegetable get(@PathVariable Long id) {
+    public Vegetable get(@PathVariable Integer id) {
         Vegetable vegetable = vegetableRepository.findById(id).get();
 
         return vegetable;
@@ -39,7 +40,7 @@ public class VegetableController {
 
     @PutMapping("/update/{id}")
     public ResponseEntity<Vegetable> update(
-            @PathVariable Long id,
+            @PathVariable Integer id,
             @RequestBody Vegetable detailsOfVegetable){
         Vegetable vegetable = vegetableRepository.findById(id).get();
         vegetable.setName(detailsOfVegetable.getName());
@@ -54,12 +55,43 @@ public class VegetableController {
     }
 
     @DeleteMapping("/{id}")
-    public Map<String, Boolean> delete(@PathVariable Long id){
+    public Map<String, Boolean> delete(@PathVariable Integer id){
         Vegetable vegetable = vegetableRepository.findById(id).get();
 
         vegetableRepository.delete(vegetable);
         Map<String, Boolean> response = new HashMap<>();
         response.put("deleted", Boolean.TRUE);
         return response;
+    }
+
+    @GetMapping("/randomVegetable")
+    public Vegetable getRandomId() {
+        Random random = new Random();
+        Integer randomId = random.nextInt(2) +1;
+        Vegetable vegetable = vegetableRepository.findById(randomId).get();
+
+        return vegetable;
+    }
+
+    // selection by types:
+    @GetMapping("/breakfast")
+    //@Transactional
+    public List<Vegetable> listAllByBreakfast(){
+        List<Vegetable> list = vegetableRepository.getAllVegetableByBreakfast();
+        return list;
+    }
+
+    @GetMapping("/lunch")
+    //@Transactional
+    public List<Vegetable> listAllByLunch(){
+        List<Vegetable> list = vegetableRepository.getAllVegetableByLunch();
+        return list;
+    }
+
+    @GetMapping("/dinner")
+    //@Transactional
+    public List<Vegetable> listAllByDinner(){
+        List<Vegetable> list = vegetableRepository.getAllVegetableByDinner();
+        return list;
     }
 }

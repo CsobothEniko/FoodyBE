@@ -9,6 +9,7 @@ import org.springframework.web.bind.annotation.*;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
+import java.util.Random;
 
 @RestController
 @RequestMapping("/protein")
@@ -25,7 +26,7 @@ public class ProteinController {
     }
 
     @GetMapping("/{id}")
-    public Protein get(@PathVariable Long id) {
+    public Protein get(@PathVariable Integer id) {
         Protein protein = proteinRepository.findById(id).get();
 
         return protein;
@@ -39,7 +40,7 @@ public class ProteinController {
 
     @PutMapping("/update/{id}")
     public ResponseEntity<Protein> update(
-            @PathVariable Long id,
+            @PathVariable Integer id,
             @RequestBody Protein detailsOfCh){
         Protein protein = proteinRepository.findById(id).get();
         protein.setName(detailsOfCh.getName());
@@ -54,12 +55,43 @@ public class ProteinController {
     }
 
     @DeleteMapping("/{id}")
-    public Map<String, Boolean> delete(@PathVariable Long id){
+    public Map<String, Boolean> delete(@PathVariable Integer id){
         Protein protein = proteinRepository.findById(id).get();
 
         proteinRepository.delete(protein);
         Map<String, Boolean> response = new HashMap<>();
         response.put("deleted", Boolean.TRUE);
         return response;
+    }
+
+    @GetMapping("/randomProtein")
+    public Protein getRandomId() {
+        Random random = new Random();
+        Integer randomId = random.nextInt(2) +1;
+        Protein protein = proteinRepository.findById(randomId).get();
+
+        return protein;
+    }
+
+    // selection by types:
+    @GetMapping("/breakfast")
+    //@Transactional
+    public List<Protein> listAllByBreakfast(){
+        List<Protein> list = proteinRepository.getAllProteinByBreakfast();
+        return list;
+    }
+
+    @GetMapping("/lunch")
+    //@Transactional
+    public List<Protein> listAllByLunch(){
+        List<Protein> list = proteinRepository.getAllProteinByLunch();
+        return list;
+    }
+
+    @GetMapping("/dinner")
+    //@Transactional
+    public List<Protein> listAllByDinner(){
+        List<Protein> list = proteinRepository.getAllProteinByDinner();
+        return list;
     }
 }

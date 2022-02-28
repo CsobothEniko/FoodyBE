@@ -25,7 +25,7 @@ public class VitaminController {
     }
 
     @GetMapping("/{id}")
-    public Vitamin get(@PathVariable Long id) {
+    public Vitamin get(@PathVariable Integer id) {
         Vitamin vitamin = vitaminRepository.findById(id).get();
 
         return vitamin;
@@ -39,7 +39,7 @@ public class VitaminController {
 
     @PutMapping("/update/{id}")
     public ResponseEntity<Vitamin> update(
-            @PathVariable Long id,
+            @PathVariable Integer id,
             @RequestBody Vitamin detailsOfVitamin){
         Vitamin vitamin = vitaminRepository.findById(id).get();
         vitamin.setName(detailsOfVitamin.getName());
@@ -54,12 +54,33 @@ public class VitaminController {
     }
 
     @DeleteMapping("/{id}")
-    public Map<String, Boolean> delete(@PathVariable Long id){
+    public Map<String, Boolean> delete(@PathVariable Integer id){
         Vitamin vitamin = vitaminRepository.findById(id).get();
 
         vitaminRepository.delete(vitamin);
         Map<String, Boolean> response = new HashMap<>();
         response.put("deleted", Boolean.TRUE);
         return response;
+    }
+// selection by types:
+    @GetMapping("/breakfast")
+    //@Transactional
+    public List<Vitamin> listAllByBreakfast(){
+        List<Vitamin> list = vitaminRepository.getAllVitaminByBreakfast();
+        return list;
+    }
+
+    @GetMapping("/lunch")
+    //@Transactional
+    public List<Vitamin> listAllByLunch(){
+        List<Vitamin> list = vitaminRepository.getAllVitaminByLunch();
+        return list;
+    }
+
+    @GetMapping("/dinner")
+    //@Transactional
+    public List<Vitamin> listAllByDinner(){
+        List<Vitamin> list = vitaminRepository.getAllVitaminByDinner();
+        return list;
     }
 }
