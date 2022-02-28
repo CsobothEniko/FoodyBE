@@ -5,7 +5,7 @@ create table ch (
 	quantity_type varchar(255),
 	calorie integer,
 	type varchar(255)
-)
+);
 
 create table fat (
 	id SERIAL PRIMARY KEY,
@@ -14,7 +14,7 @@ create table fat (
 	quantity_type varchar(255),
 	calorie integer,
 	type varchar(255)
-)
+);
 
 create table fruit (
 	id SERIAL PRIMARY KEY,
@@ -23,7 +23,7 @@ create table fruit (
 	quantity_type varchar(255),
 	calorie integer,
 	type varchar(255)
-)
+);
 
 create table protein (
 	id SERIAL PRIMARY KEY,
@@ -32,7 +32,7 @@ create table protein (
 	quantity_type varchar(255),
 	calorie integer,
 	type varchar(255)
-)
+);
 
 create table vegetable (
 	id SERIAL PRIMARY KEY,
@@ -41,13 +41,32 @@ create table vegetable (
 	quantity_type varchar(255),
 	calorie integer,
 	type varchar(255)
-)
+);
 
 create table vitamin (
 	id SERIAL PRIMARY KEY,
 	name varchar(255),
 	quantity integer,
-	quantity_type varchar(255),
-	calorie integer,
 	type varchar(255)
-)
+);
+
+create table plan (
+	id SERIAL PRIMARY KEY,
+	ch_id integer,
+	fat_id integer,
+	pr_id integer,
+	fr_id integer,
+	veg_id integer,
+	type varchar(255)
+);
+
+create table diet_plan (
+	id SERIAL PRIMARY KEY,
+	breakfast_id integer,
+	lunch_id integer,
+	dinner_id integer,
+	weekday integer
+);
+
+
+

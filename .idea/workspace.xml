@@ -4,10 +4,18 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7dd0462d-1fb4-4a6c-a8bb-1c4ad21146a1" name="Default Changelist" comment="">
+    <list default="true" id="7dd0462d-1fb4-4a6c-a8bb-1c4ad21146a1" name="Default Changelist" comment="target folder gitignore-hoz hozzáadása">
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/foody/be/model/Fat.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/foody/be/model/Fat.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/foody/be/model/Fat.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/foody/be/model/Fat.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/be.iml" beforeDir="false" afterPath="$PROJECT_DIR$/be.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sql_scripts/create_base_tables.txt" beforeDir="false" afterPath="$PROJECT_DIR$/sql_scripts/create_base_tables.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/foody/be/controller/ChController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/foody/be/controller/ChController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/foody/be/repository/ChRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/foody/be/repository/ChRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/foody/be/controller/ChController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/foody/be/controller/ChController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/foody/be/repository/ChRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/foody/be/repository/ChRepository.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -142,7 +150,7 @@
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
-    <property name="DatabaseDriversLRU" value="mysql" />
+    <property name="DatabaseDriversLRU" value="mysql&#10;postgresql" />
     <property name="ExpandSpringBootJavaOptionsPanel" value="true" />
     <property name="RequestMappingsPanelOrder0" value="0" />
     <property name="RequestMappingsPanelOrder1" value="1" />
@@ -152,24 +160,13 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1642620670362" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../SPRINGBOOT_PROJECTEK/AIOPS" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/java/com/foody/be/model" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.0" />
     <property name="settings.editor.selected.configurable" value="editor.preferences.import" />
   </component>
   <component name="RunManager" selected="Spring Boot.start">
-    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
-      <option name="arquillianRunConfiguration">
-        <value>
-          <option name="containerStateName" value="" />
-        </value>
-      </option>
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration default="true" type="MavenRunConfiguration" factoryName="Maven">
       <MavenSettings>
         <option name="myGeneralSettings" />
@@ -250,7 +247,9 @@
       <workItem from="1644241653776" duration="1053000" />
       <workItem from="1644243121599" duration="12502000" />
       <workItem from="1644519966544" duration="2934000" />
-      <workItem from="1644522962305" duration="8570000" />
+      <workItem from="1644522962305" duration="8921000" />
+      <workItem from="1645444137219" duration="12628000" />
+      <workItem from="1645642649381" duration="13157000" />
     </task>
     <task id="LOCAL-00001" summary="DATABASE CRUD">
       <created>1644671102067</created>
@@ -266,7 +265,21 @@
       <option name="project" value="LOCAL" />
       <updated>1644671159525</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="DATABASE CRUD a többi modelhez">
+      <created>1644697622856</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1644697622856</updated>
+    </task>
+    <task id="LOCAL-00004" summary="target folder gitignore-hoz hozzáadása">
+      <created>1644697775434</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1644697775434</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
@@ -334,7 +347,9 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="DATABASE CRUD" />
-    <option name="LAST_COMMIT_MESSAGE" value="DATABASE CRUD" />
+    <MESSAGE value="DATABASE CRUD a többi modelhez" />
+    <MESSAGE value="target folder gitignore-hoz hozzáadása" />
+    <option name="LAST_COMMIT_MESSAGE" value="target folder gitignore-hoz hozzáadása" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/src/main/java/com/foody/be/BeApplication.java">

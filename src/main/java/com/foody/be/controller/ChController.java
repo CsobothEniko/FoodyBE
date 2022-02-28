@@ -1,5 +1,7 @@
 package com.foody.be.controller;
 
+import com.foody.be.dto.ChAndFat;
+import com.foody.be.dto.RandomCh;
 import com.foody.be.model.Ch;
 //import lombok.RequiredArgsConstructor;
 import com.foody.be.repository.ChRepository;
@@ -25,12 +27,25 @@ public class ChController {
     //@Transactional
     public List<Ch> list(){
         List<Ch> list = chRepository.findAll();
+        System.out.println(list.get(0));
         return list;
+    }
+
+    @GetMapping("/getChAndFat")
+    public List<ChAndFat> getChAndFat(){
+        return chRepository.getChAndFat();
+    }
+
+    //
+    @GetMapping("/random")
+    public RandomCh randomCh(){
+        return chRepository.getRandomCh();
     }
 
     @GetMapping("/{id}")
     public Ch get(@PathVariable Long id) {
         Ch ch = chRepository.findById(id).get();
+        System.out.println("ch: " + ch);
 
         return ch;
     }
@@ -67,15 +82,4 @@ public class ChController {
         return response;
     }
 }
-/*
-    @DeleteMapping("/delete-employees/{id}")
-    public Map<String, Boolean> deleteEmployee(@PathVariable(value = "id") Integer employeeId)
-    {
-     EmployeeEntity employee = employeeRepository.findById(employeeId).get();
 
-        employeeRepository.delete(employee);
-        Map<String, Boolean> response = new HashMap<>();
-        response.put("deleted", Boolean.TRUE);
-        return response;
-    }
- */
