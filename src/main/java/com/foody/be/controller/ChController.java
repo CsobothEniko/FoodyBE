@@ -101,5 +101,8 @@ public class ChController {
         List<Ch> list = chRepository.getAllChByDinner();
         return list;
     }
+
+    //save the random items to plan table:
+
 }
 

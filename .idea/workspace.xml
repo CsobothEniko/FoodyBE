@@ -7,25 +7,11 @@
     <list default="true" id="7dd0462d-1fb4-4a6c-a8bb-1c4ad21146a1" name="Default Changelist" comment="target folder gitignore-hoz hozzáadása">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/foody/be/controller/ChController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/foody/be/controller/ChController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/foody/be/controller/FatController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/foody/be/controller/FatController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/foody/be/controller/FruitController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/foody/be/controller/FruitController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/foody/be/controller/ProteinController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/foody/be/controller/ProteinController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/foody/be/controller/VegetableController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/foody/be/controller/VegetableController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/foody/be/controller/VitaminController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/foody/be/controller/VitaminController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/foody/be/dto/DietPlan.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/foody/be/dto/DP.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/foody/be/model/Ch.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/foody/be/model/Ch.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/foody/be/repository/ChRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/foody/be/repository/ChRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/foody/be/repository/FatRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/foody/be/repository/FatRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/foody/be/repository/FruitRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/foody/be/repository/FruitRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/foody/be/repository/ProteinRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/foody/be/repository/ProteinRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/foody/be/repository/VegetableRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/foody/be/repository/VegetableRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/foody/be/repository/VitaminRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/foody/be/repository/VitaminRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/foody/be/controller/ChController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/foody/be/controller/ChController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/foody/be/controller/FatController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/foody/be/controller/FatController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/foody/be/controller/FruitController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/foody/be/controller/FruitController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/foody/be/repository/ChRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/foody/be/repository/ChRepository.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/foody/be/controller/DietPlanController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/foody/be/controller/DietPlanController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/foody/be/controller/PlanController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/foody/be/controller/PlanController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/foody/be/model/Ch.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/foody/be/model/Ch.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/foody/be/repository/FatRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/foody/be/repository/FatRepository.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/foody/be/repository/FruitRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/foody/be/repository/FruitRepository.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -271,7 +257,7 @@
       <workItem from="1644519966544" duration="2934000" />
       <workItem from="1644522962305" duration="8921000" />
       <workItem from="1645444137219" duration="12628000" />
-      <workItem from="1645642649381" duration="18381000" />
+      <workItem from="1645642649381" duration="19792000" />
     </task>
     <task id="LOCAL-00001" summary="DATABASE CRUD">
       <created>1644671102067</created>
@@ -308,7 +294,14 @@
       <option name="project" value="LOCAL" />
       <updated>1646052082196</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="selection by dinner, lunch and breakfast">
+      <created>1646070511327</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1646070511327</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
@@ -379,7 +372,8 @@
     <MESSAGE value="DATABASE CRUD a többi modelhez" />
     <MESSAGE value="target folder gitignore-hoz hozzáadása" />
     <MESSAGE value="dietPlan + plan tables" />
-    <option name="LAST_COMMIT_MESSAGE" value="dietPlan + plan tables" />
+    <MESSAGE value="selection by dinner, lunch and breakfast" />
+    <option name="LAST_COMMIT_MESSAGE" value="selection by dinner, lunch and breakfast" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/src/main/java/com/foody/be/BeApplication.java">
