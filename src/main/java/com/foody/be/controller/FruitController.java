@@ -64,7 +64,7 @@ public class FruitController {
         return response;
     }
 
-    @GetMapping("/randomFruit")
+    @GetMapping("/random")
     public Fruit getRandomId() {
         Random random = new Random();
         Integer randomId = random.nextInt(2) +1;

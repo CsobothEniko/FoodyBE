@@ -64,7 +64,7 @@ public class ProteinController {
         return response;
     }
 
-    @GetMapping("/randomProtein")
+    @GetMapping("/random")
     public Protein getRandomId() {
         Random random = new Random();
         Integer randomId = random.nextInt(2) +1;

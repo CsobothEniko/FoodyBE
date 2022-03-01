@@ -64,7 +64,7 @@ public class FatController {
         return response;
     }
 
-    @GetMapping("/randomFat")
+    @GetMapping("/random")
     public Fat getRandomId() {
         Random random = new Random();
         Integer randomId = random.nextInt(2) +1;

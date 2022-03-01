@@ -39,7 +39,7 @@ public class ChController {
         return ch;
     }
 
-    @GetMapping("/randomCh")
+    @GetMapping("/random")
     public Ch getRandomId() {
         Random random = new Random();
         Integer randomId = random.nextInt(2) +1;
@@ -103,6 +103,31 @@ public class ChController {
     }
 
     //save the random items to plan table:
+
+    //random ch breakfast szerint:
+    @GetMapping("/randomBreakfast")
+    public Ch getRandomBreakfast() {
+        Random random = new Random();
+        Integer randomId = random.nextInt(4) +1;
+
+        boolean x = true;
+
+        Ch ch = chRepository.findById(randomId).get();
+
+        while(x == true) {
+            if (ch.getType().equalsIgnoreCase("lunch")) {
+                x = false;
+                //return ch;
+
+
+            } else {
+                randomId = random.nextInt(4) + 1;
+                ch = chRepository.findById(randomId).get();
+                x = true;
+            }
+        }
+        return ch;
+    }
 
 }
 

@@ -38,14 +38,14 @@ public class PlanController {
     @PutMapping("/update/{id}")
     public ResponseEntity<Plan> update(
             @PathVariable Integer id,
-            @RequestBody Plan detailsOfDietPlan){
+            @RequestBody Plan details){
         Plan plan = planRepository.findById(id).get();
-        plan.setChId(detailsOfDietPlan.getChId());
-        plan.setFatId(detailsOfDietPlan.getFatId());
-        plan.setPrId(detailsOfDietPlan.getPrId());
-        plan.setFrId(detailsOfDietPlan.getFrId());
-        plan.setVegId(detailsOfDietPlan.getVegId());
-        plan.setType(detailsOfDietPlan.getType());
+        plan.setChId(details.getChId());
+        plan.setFatId(details.getFatId());
+        plan.setPrId(details.getPrId());
+        plan.setFrId(details.getFrId());
+        plan.setVegId(details.getVegId());
+        plan.setType(details.getType());
 
         final Plan updatedPlan = planRepository.save(plan);
         return ResponseEntity.ok(updatedPlan);

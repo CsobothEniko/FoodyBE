@@ -64,7 +64,7 @@ public class VegetableController {
         return response;
     }
 
-    @GetMapping("/randomVegetable")
+    @GetMapping("/random")
     public Vegetable getRandomId() {
         Random random = new Random();
         Integer randomId = random.nextInt(2) +1;
