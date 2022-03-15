@@ -118,8 +118,6 @@ public class ChController {
             if (ch.getType().equalsIgnoreCase("lunch")) {
                 x = false;
                 //return ch;
-
-
             } else {
                 randomId = random.nextInt(4) + 1;
                 ch = chRepository.findById(randomId).get();

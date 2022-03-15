@@ -69,4 +69,36 @@ create table diet_plan (
 );
 
 
+create table user_data (
+	id SERIAL PRIMARY KEY,
+	last_name varchar(255),
+	first_name varchar(255),
+	username varchar(255),
+	password varchar(255)
+	
+);
+
+create table user_table(
+	id SERIAL PRIMARY KEY,
+	email varchar(255),
+	username varchar(255),
+	password varchar(255)
+
+);
+
+-- ez csak összekötő tábla, nem kell létrehozni
+create table user_role(
+	
+
+);
+
+create table role(
+	id SERIAL PRIMARY KEY,
+	name varchar(255),
+	
+
+);
+
+
+
 
