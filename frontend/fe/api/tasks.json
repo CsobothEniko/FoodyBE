@@ -1,0 +1,26 @@
+[
+    {
+      "id": 1,
+      "name": "első",
+      "completed": true,
+      "due": "2022-03-05",
+    },
+    {
+      "id": 2,
+      "name": "második",
+      "completed": true,
+      "due": "2022-03-05",
+    },
+    {
+      "id": 3,
+      "name": "harmadik",
+      "completed": false,
+      "due": "2022-03-05",
+    },
+    {
+      "id": 4,
+      "name": "negyedik",
+      "completed": false,
+      "due": "2022-03-05",
+    }
+  ]

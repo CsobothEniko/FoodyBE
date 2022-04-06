@@ -13,6 +13,7 @@ import org.springframework.web.bind.annotation.*;
 import java.util.*;
 
 @RestController
+@CrossOrigin(origins = "http://localhost:3000")
 @RequestMapping("/ch")
 public class ChController {
 
@@ -32,6 +33,7 @@ public class ChController {
         return chRepository.getChAndFat();
     }
 
+    @CrossOrigin(origins = "http://localhost:3000")
     @GetMapping("/{id}")
     public Ch get(@PathVariable Integer id) {
         Ch ch = chRepository.findById(id).get();
@@ -39,6 +41,7 @@ public class ChController {
         return ch;
     }
 
+    @CrossOrigin(origins = "http://localhost:3000")
     @GetMapping("/random")
     public Ch getRandomId() {
         Random random = new Random();

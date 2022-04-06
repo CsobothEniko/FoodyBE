@@ -1,5 +1,7 @@
 package com.foody.be.auth.controller;
 
+import com.fasterxml.jackson.core.JsonProcessingException;
+import com.fasterxml.jackson.databind.ObjectMapper;
 import com.foody.be.auth.dto.LoginDto;
 import com.foody.be.auth.dto.SignUpDto;
 import com.foody.be.auth.model.Role;
@@ -14,10 +16,7 @@ import org.springframework.security.authentication.UsernamePasswordAuthenticatio
 import org.springframework.security.core.Authentication;
 import org.springframework.security.core.context.SecurityContextHolder;
 import org.springframework.security.crypto.password.PasswordEncoder;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestBody;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 import java.util.Collections;
 
@@ -37,17 +36,25 @@ public class AuthController {
     @Autowired
     private PasswordEncoder passwordEncoder;
 
-    @PostMapping("/signin")
-    public ResponseEntity<String> authenticateUser(@RequestBody LoginDto loginDto){
-        Authentication authentication = authenticationManager.authenticate(new UsernamePasswordAuthenticationToken(
-                loginDto.getUsernameOrEmail(), loginDto.getPassword()));
+    private final ObjectMapper jsonMapper;
 
-        SecurityContextHolder.getContext().setAuthentication(authentication);
-        return new ResponseEntity<>("User signed-in successfully!.", HttpStatus.OK);
+    public AuthController(ObjectMapper jsonMapper) {
+        this.jsonMapper = jsonMapper;
     }
 
+    @CrossOrigin(origins = "http://localhost:3000")
+    @PostMapping("/signin")
+    public ResponseEntity<String> authenticateUser(@RequestBody LoginDto loginDto) throws JsonProcessingException {
+        Authentication authentication = authenticationManager.authenticate(new UsernamePasswordAuthenticationToken(
+                loginDto.getUsername(), loginDto.getPassword()));
+
+        SecurityContextHolder.getContext().setAuthentication(authentication);
+        return new ResponseEntity<>(this.jsonMapper.writeValueAsString(loginDto), HttpStatus.OK);
+    }
+
+    @CrossOrigin(origins = "http://localhost:3000")
     @PostMapping("/signup")
-    public ResponseEntity<?> registerUser(@RequestBody SignUpDto signUpDto){
+    public ResponseEntity<?> registerUser(@RequestBody SignUpDto signUpDto) throws JsonProcessingException {
 
         // add check for username exists in a DB
         if(userRepository.existsByUsername(signUpDto.getUsername())){
@@ -71,7 +78,8 @@ public class AuthController {
 
         userRepository.save(user);
 
-        return new ResponseEntity<>("User registered successfully", HttpStatus.OK);
+        return new ResponseEntity<>(this.jsonMapper.writeValueAsString(signUpDto), HttpStatus.OK);
 
     }
+
 }
