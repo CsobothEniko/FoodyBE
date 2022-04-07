@@ -36,7 +36,7 @@ public class BeApplication {
 			}
 		};}*/
 
-	@Bean
+	/*@Bean
 	public WebMvcConfigurer corsConfigurer() {
 		return new WebMvcConfigurer() {
 			@Override
@@ -44,6 +44,6 @@ public class BeApplication {
 				registry.addMapping("/**").allowedOrigins("http://localhost:3000");
 			}
 		};
-	}
+	}*/
 
 }

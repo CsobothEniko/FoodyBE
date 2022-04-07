@@ -13,7 +13,7 @@ import org.springframework.web.bind.annotation.*;
 import java.util.*;
 
 @RestController
-@CrossOrigin(origins = "http://localhost:3000")
+//@CrossOrigin(origins = "http://localhost:3000")
 @RequestMapping("/ch")
 public class ChController {
 
@@ -41,15 +41,15 @@ public class ChController {
         return ch;
     }
 
-    @CrossOrigin(origins = "http://localhost:3000")
-    @GetMapping("/random")
-    public Ch getRandomId() {
-        Random random = new Random();
+    //@CrossOrigin(origins = "http://localhost:3000")
+    @RequestMapping(value = "/random",method = RequestMethod.GET,produces = "application/json; charset=UTF-8")
+    public ResponseEntity<String> getRandomId() {
+       /* Random random = new Random();
         Integer randomId = random.nextInt(2) +1;
         Ch ch = chRepository.findById(randomId).get();
-        System.out.println("ch: " + ch);
+        System.out.println("ch: " + ch);*/
 
-        return ch;
+        return new ResponseEntity<>(HttpStatus.OK);
     }
 
     @PostMapping("")

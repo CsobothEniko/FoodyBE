@@ -6,14 +6,8 @@
   <component name="ChangeListManager">
     <list default="true" id="7dd0462d-1fb4-4a6c-a8bb-1c4ad21146a1" name="Default Changelist" comment="target folder gitignore-hoz hozzáadása">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/fe/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/fe/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/fe/src/App.vue" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/fe/src/App.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/fe/src/views/AboutView.vue" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/fe/src/views/AboutView.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/fe/src/views/HomeView.vue" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/fe/src/views/HomeView.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/fe/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/fe/yarn.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/foody/be/BeApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/foody/be/BeApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/foody/be/auth/controller/AuthController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/foody/be/auth/controller/AuthController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/foody/be/auth/dto/LoginDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/foody/be/auth/dto/LoginDto.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/foody/be/auth/SecurityConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/foody/be/auth/SecurityConfig.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/foody/be/controller/ChController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/foody/be/controller/ChController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/foody/be/BeApplication.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/foody/be/BeApplication.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/foody/be/controller/ChController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/foody/be/controller/ChController.class" afterDir="false" />
@@ -197,7 +191,7 @@
       <workItem from="1646939849085" duration="3353000" />
       <workItem from="1647369220257" duration="6419000" />
       <workItem from="1648577940256" duration="7699000" />
-      <workItem from="1649098014221" duration="6155000" />
+      <workItem from="1649098014221" duration="9719000" />
     </task>
     <task id="LOCAL-00001" summary="DATABASE CRUD">
       <created>1644671102067</created>
@@ -310,6 +304,17 @@
     <MESSAGE value="auth" />
     <MESSAGE value="frontend" />
     <option name="LAST_COMMIT_MESSAGE" value="frontend" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/foody/be/controller/ChController.java</url>
+          <line>51</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
   <component name="masterDetails">
     <states>
