@@ -1,8 +1,11 @@
 package com.foody.be.controller;
 
+import com.fasterxml.jackson.core.JsonProcessingException;
+import com.fasterxml.jackson.databind.ObjectMapper;
 import com.foody.be.model.Protein;
 import com.foody.be.repository.ProteinRepository;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
@@ -18,6 +21,12 @@ public class ProteinController {
     @Autowired
     ProteinRepository proteinRepository;
 
+    private final ObjectMapper jsonMapper;
+
+    public ProteinController(ObjectMapper jsonMapper) {
+        this.jsonMapper = jsonMapper;
+    }
+
     @GetMapping("/list")
     //@Transactional
     public List<Protein> list(){
@@ -32,10 +41,16 @@ public class ProteinController {
         return protein;
     }
 
-    @PostMapping("")
+    /*@PostMapping("")
     public Protein insert(@RequestBody Protein ch){
         Protein saved = proteinRepository.save(ch);
         return saved;
+    }*/
+
+    @PostMapping("")
+    public ResponseEntity<String>  insert(@RequestBody Protein ch) throws JsonProcessingException {
+        Protein saved = proteinRepository.save(ch);
+        return new ResponseEntity<>(this.jsonMapper.writeValueAsString(saved), HttpStatus.OK);
     }
 
     @PutMapping("/update/{id}")

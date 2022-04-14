@@ -19,6 +19,8 @@ import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.Collections;
+import java.util.List;
+import java.util.Optional;
 
 @RestController
 @RequestMapping("/api/auth")
@@ -81,5 +83,24 @@ public class AuthController {
         return new ResponseEntity<>(this.jsonMapper.writeValueAsString(signUpDto), HttpStatus.OK);
 
     }
+
+    @GetMapping("/currentUser")
+    public ResponseEntity<?> currentUser(@RequestBody String username) throws JsonProcessingException {
+
+        Optional<User> currentUser = userRepository.findByUsername(username);
+
+        return new ResponseEntity<>(this.jsonMapper.writeValueAsString(currentUser), HttpStatus.OK);
+
+    }
+
+    @GetMapping("/allUser")
+    public ResponseEntity<?> allUser() throws JsonProcessingException {
+
+        List<User> users = userRepository.findAll();
+
+        return new ResponseEntity<>(this.jsonMapper.writeValueAsString(users), HttpStatus.OK);
+
+    }
+
 
 }

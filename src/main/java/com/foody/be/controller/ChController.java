@@ -44,12 +44,12 @@ public class ChController {
     //@CrossOrigin(origins = "http://localhost:3000")
     @RequestMapping(value = "/random",method = RequestMethod.GET,produces = "application/json; charset=UTF-8")
     public ResponseEntity<String> getRandomId() {
-       /* Random random = new Random();
+        Random random = new Random();
         Integer randomId = random.nextInt(2) +1;
         Ch ch = chRepository.findById(randomId).get();
-        System.out.println("ch: " + ch);*/
+        System.out.println("ch: " + ch);
 
-        return new ResponseEntity<>(HttpStatus.OK);
+        return new ResponseEntity<>(ch.getName(),HttpStatus.OK);
     }
 
     @PostMapping("")
