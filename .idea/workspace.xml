@@ -6,13 +6,6 @@
   <component name="ChangeListManager">
     <list default="true" id="7dd0462d-1fb4-4a6c-a8bb-1c4ad21146a1" name="Default Changelist" comment="jsonMapper behúzása proteinhez + id-k javítása">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/foody/be/BeApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/foody/be/BeApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/foody/be/controller/DietPlanController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/foody/be/controller/DietPlanController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/foody/be/controller/PlanController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/foody/be/controller/plan/BreakfastController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/foody/be/controller/plan/BreakfastController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/foody/be/model/Plan.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/foody/be/repository/PlanRepository.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/foody/be/BeApplication.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/foody/be/BeApplication.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -59,8 +52,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Class" />
         <option value="Interface" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -212,7 +205,7 @@
       <workItem from="1646939849085" duration="3353000" />
       <workItem from="1647369220257" duration="6419000" />
       <workItem from="1648577940256" duration="7699000" />
-      <workItem from="1649098014221" duration="35616000" />
+      <workItem from="1649098014221" duration="37093000" />
     </task>
     <task id="LOCAL-00001" summary="DATABASE CRUD">
       <created>1644671102067</created>
