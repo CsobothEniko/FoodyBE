@@ -100,11 +100,11 @@ public class Lunch {
         this.vitaminId1 = vitaminId1;
     }
 
-    public Integer getVitaminid2() {
+    public Integer getVitaminId2() {
         return this.vitaminid2;
     }
 
-    public void setVitaminid2(Integer vitaminid2) {
+    public void setVitaminId2(Integer vitaminid2) {
         this.vitaminid2 = vitaminid2;
     }
 }

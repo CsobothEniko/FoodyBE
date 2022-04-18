@@ -1,8 +1,13 @@
 package com.foody.be.controller;
 
+import com.fasterxml.jackson.core.JsonProcessingException;
 import com.foody.be.model.Plan;
 import com.foody.be.repository.PlanRepository;
+import com.foody.be.repository.plan.BreakfastRepository;
+import com.foody.be.repository.plan.DinnerRepository;
+import com.foody.be.repository.plan.LunchRepository;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
@@ -16,6 +21,15 @@ public class PlanController {
 
     @Autowired
     PlanRepository planRepository;
+
+    @Autowired
+    BreakfastRepository breakfastRepository;
+
+    @Autowired
+    LunchRepository lunchRepository;
+
+    @Autowired
+    DinnerRepository dinnerRepository;
 
     @GetMapping("/list")
     public List<Plan> list(){
@@ -61,4 +75,6 @@ public class PlanController {
         response.put("deleted", Boolean.TRUE);
         return response;
     }
+
+
 }

@@ -7,24 +7,22 @@ create view breakfast_v(
 
     ) AS SELECT
          ch.name AS ch,
-         f.name AS fat,
+         fat.name AS fat,
          protein.name AS protein,
          fruit.name AS fruit,
          vg.name AS vegetale
 
-FROM plan p
-    JOIN ch ch ON ch.id = p.ch_id
-    JOIN fat f on p.fat_id = f.id
-    JOIN protein protein ON protein.id = p.pr_id
-    JOIN fruit fruit ON fruit.id = p.fr_id
-    JOIN vegetable vg ON vg.id = p.veg_id
+FROM diet_plan diet
+	JOIN breakfast breakfast ON breakfast.id = diet.breakfast_id
+    --JOIN lunch lunch ON lunch.id = diet.lunch_id
+   -- JOIN dinner dinner ON dinner.id = diet.dinner_id
+    JOIN ch ch ON ch.id = breakfast.ch_id
+    JOIN fat fat on fat.id = breakfast.fat_id
+    JOIN protein protein ON protein.id = breakfast.pr_id
+    JOIN fruit fruit ON fruit.id = breakfast.fr_id
+    JOIN vegetable vg ON vg.id = breakfast.veg_id
 
-WHERE 1 = 1
-AND ch.type='breakfast'
-AND f.type='breakfast'
-AND protein.type='breakfast'
-AND fruit.type='breakfast'
-AND vg.type='breakfast';
+WHERE 1 = 1;
 
 --
 
@@ -37,24 +35,22 @@ create view lunch_v(
 
     ) AS SELECT
          ch.name AS ch,
-         f.name AS fat,
+         fat.name AS fat,
          protein.name AS protein,
          fruit.name AS fruit,
          vg.name AS vegetale
 
-FROM plan p
-    JOIN ch ch ON ch.id = p.ch_id
-    JOIN fat f on p.fat_id = f.id
-    JOIN protein protein ON protein.id = p.pr_id
-    JOIN fruit fruit ON fruit.id = p.fr_id
-    JOIN vegetable vg ON vg.id = p.veg_id
+FROM diet_plan diet
+	--JOIN breakfast breakfast ON breakfast.id = diet.breakfast_id
+    JOIN lunch lunch ON lunch.id = diet.lunch_id
+   -- JOIN dinner dinner ON dinner.id = diet.dinner_id
+    JOIN ch ch ON ch.id = lunch.ch_id
+    JOIN fat fat on fat.id = lunch.fat_id
+    JOIN protein protein ON protein.id = lunch.pr_id
+    JOIN fruit fruit ON fruit.id = lunch.fr_id
+    JOIN vegetable vg ON vg.id = lunch.veg_id
 
-WHERE 1 = 1
-AND ch.type='lunch'
-AND f.type='lunch'
-AND protein.type='lunch'
-AND fruit.type='lunch'
-AND vg.type='lunch';
+WHERE 1 = 1;
 
 --
 
@@ -67,25 +63,19 @@ create view dinner_v(
 
     ) AS SELECT
          ch.name AS ch,
-         f.name AS fat,
+         fat.name AS fat,
          protein.name AS protein,
          fruit.name AS fruit,
          vg.name AS vegetale
 
-FROM plan p
-    JOIN ch ch ON ch.id = p.ch_id
-    JOIN fat f on p.fat_id = f.id
-    JOIN protein protein ON protein.id = p.pr_id
-    JOIN fruit fruit ON fruit.id = p.fr_id
-    JOIN vegetable vg ON vg.id = p.veg_id
+FROM diet_plan diet
+	--JOIN breakfast breakfast ON breakfast.id = diet.breakfast_id
+    --JOIN lunch lunch ON lunch.id = diet.lunch_id
+    JOIN dinner dinner ON dinner.id = diet.dinner_id
+    JOIN ch ch ON ch.id = dinner.ch_id
+    JOIN fat fat on fat.id = dinner.fat_id
+    JOIN protein protein ON protein.id = dinner.pr_id
+    JOIN fruit fruit ON fruit.id = dinner.fr_id
+    JOIN vegetable vg ON vg.id = dinner.veg_id
 
-WHERE 1 = 1
-AND ch.type='dinner'
-AND f.type='dinner'
-AND protein.type='dinner'
-AND fruit.type='dinner'
-AND vg.type='dinner';
-
-
---day views:
-
+WHERE 1 = 1;
