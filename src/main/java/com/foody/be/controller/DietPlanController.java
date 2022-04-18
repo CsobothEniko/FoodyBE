@@ -82,20 +82,20 @@ public class DietPlanController {
         return response;
     }
 
+    //weekly plan generating:
     @RequestMapping(value = "",method = RequestMethod.GET,produces = "application/json; charset=UTF-8")
     public ResponseEntity<String> random() throws JsonProcessingException {
-        DietPlan plan = new DietPlan();
-        plan.setBreakfastId(breakfastRepository.random().getId());
-        plan.setLunchId(lunchRepository.random().getId());
-        plan.setDinnerId(dinnerRepository.random().getId());
+        for(int i = 1; i < 8; i++){
+            DietPlan plan = new DietPlan();
+            plan.setBreakfastId(breakfastRepository.random().getId());
+            plan.setLunchId(lunchRepository.random().getId());
+            plan.setDinnerId(dinnerRepository.random().getId());
 
-        //TODO: mindig menjen 1-től 7-ig!
-        plan.setWeekday(1);
-
-
-        dietPlanRepository.save(plan);
-
-        return new ResponseEntity<>(this.jsonMapper.writeValueAsString(plan), HttpStatus.OK);
+            //TODO: mindig menjen 1-től 7-ig!
+            plan.setWeekday(i);
+            dietPlanRepository.save(plan);
+        }
+        return new ResponseEntity<>(HttpStatus.OK);
     }
 
 

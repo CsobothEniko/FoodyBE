@@ -43,6 +43,7 @@ public class BreakfastController {
 
     @RequestMapping(value = "",method = RequestMethod.GET,produces = "application/json; charset=UTF-8")
     public ResponseEntity<String> random() throws JsonProcessingException {
+
         Breakfast br = new Breakfast();
         br.setChId(chRepository.randomBreakfast().getId());
         br.setPrId(proteinRepository.randomBreakfast().getId());
