@@ -100,6 +100,42 @@ create table role(
 );
 
 
+create table breakfast (
+	id SERIAL PRIMARY KEY,
+	ch_id integer,
+	fat_id integer,
+	pr_id integer,
+	fr_id integer,
+	veg_id integer,
+	vitamin_id1 integer,
+	vitaminid2 integer
+	
+);
+
+create table lunch (
+	id SERIAL PRIMARY KEY,
+	ch_id integer,
+	fat_id integer,
+	pr_id integer,
+	fr_id integer,
+	veg_id integer,
+	vitamin_id1 integer,
+	vitaminid2 integer
+	
+);
+
+create table dinner (
+	id SERIAL PRIMARY KEY,
+	ch_id integer,
+	fat_id integer,
+	pr_id integer,
+	fr_id integer,
+	veg_id integer,
+	vitamin_id1 integer,
+		
+);
+
+
 
 
 

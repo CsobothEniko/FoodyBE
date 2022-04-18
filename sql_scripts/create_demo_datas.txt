@@ -1,102 +1,164 @@
-INSERT INTO ch (id, name, quantity, quantity_type, calorie, type) 
-VALUES  ('hajdina',100, 'g',100,'lunch');
+INSERT INTO ch (name, quantity, quantity_type, calorie, type)
+VALUES  ('hajdina',100, 'g',100,'breakfast');
 
-INSERT INTO ch (id, name, quantity, quantity_type, calorie, type) 
-VALUES  ('rizs',100, 'g',100,'lunch');
+INSERT INTO ch ( name, quantity, quantity_type, calorie, type)
+VALUES  ('rizs',100, 'g',100,'breakfast');
 
-INSERT INTO ch (id, name, quantity, quantity_type, calorie, type) 
+INSERT INTO ch ( name, quantity, quantity_type, calorie, type)
 VALUES  ('bagett',100, 'g',100,'breakfast');
 
-INSERT INTO ch (id, name, quantity, quantity_type, calorie, type) 
+INSERT INTO ch ( name, quantity, quantity_type, calorie, type)
+VALUES  ('quinoa',100, 'g',100,'lunch');
+
+INSERT INTO ch ( name, quantity, quantity_type, calorie, type)
+VALUES  ('édesburgonya',100, 'g',100,'lunch');
+
+INSERT INTO ch ( name, quantity, quantity_type, calorie, type)
+VALUES  ('hajdina',100, 'g',100,'lunch');
+
+INSERT INTO ch ( name, quantity, quantity_type, calorie, type)
+VALUES  ('burgonya',100, 'g',100,'dinner');
+
+INSERT INTO ch (name, quantity, quantity_type, calorie, type)
+VALUES  ('bagett',100, 'g',100,'dinner');
+
+INSERT INTO ch ( name, quantity, quantity_type, calorie, type)
 VALUES  ('quinoa',100, 'g',100,'dinner');
 
-INSERT INTO ch (id, name, quantity, quantity_type, calorie, type) 
-VALUES  ('édesburgonya',100, 'g',100,'all');
 
 -- #####################################################
 
-INSERT INTO fat (id, name, quantity, quantity_type, calorie, type) 
+INSERT INTO fat ( name, quantity, quantity_type, calorie, type)
 VALUES  ('kesudió',100, 'g',100,'breakfast');
 
-INSERT INTO fat (id, name, quantity, quantity_type, calorie, type) 
-VALUES  ('olivaolaj',100, 'g',100,'lunch');
+INSERT INTO fat ( name, quantity, quantity_type, calorie, type)
+VALUES  ('mogyoró',100, 'g',100,'breakfast');
 
-INSERT INTO fat (id, name, quantity, quantity_type, calorie, type) 
+INSERT INTO fat ( name, quantity, quantity_type, calorie, type)
 VALUES  ('avocado',100, 'g',100,'breakfast');
 
-INSERT INTO fat (id, name, quantity, quantity_type, calorie, type) 
-VALUES  ('mogyoró',100, 'g',100,'dinner');
+INSERT INTO fat ( name, quantity, quantity_type, calorie, type)
+VALUES  ('olivaolaj',100, 'g',100,'lunch');
 
-INSERT INTO fat (id, name, quantity, quantity_type, calorie, type) 
-VALUES  ('tojás',100, 'g',100,'all');
+INSERT INTO fat (name, quantity, quantity_type, calorie, type)
+VALUES  ('tojás',100, 'g',100,'lunch');
+
+INSERT INTO fat ( name, quantity, quantity_type, calorie, type)
+VALUES  ('halolaj',100, 'g',100,'lunch');
+
+INSERT INTO fat ( name, quantity, quantity_type, calorie, type)
+VALUES  ('vaj',100, 'g',100,'dinner');
+
+INSERT INTO fat (name, quantity, quantity_type, calorie, type)
+VALUES  ('makadámdió',100, 'g',100,'dinner');
+
+INSERT INTO fat ( name, quantity, quantity_type, calorie, type)
+VALUES  ('tojás',100, 'g',100,'dinner');
 
 -- ######################################################
 
-INSERT INTO protein (id, name, quantity, quantity_type, calorie, type) 
+INSERT INTO protein ( name, quantity, quantity_type, calorie, type)
 VALUES  ('felvágott',100, 'g',100,'breakfast');
 
-INSERT INTO protein (id, name, quantity, quantity_type, calorie, type) 
-VALUES  ('hal',100, 'g',100,'lunch');
+INSERT INTO protein ( name, quantity, quantity_type, calorie, type)
+VALUES  ('májkrém',100, 'g',100,'breakfast');
 
-INSERT INTO protein (id, name, quantity, quantity_type, calorie, type) 
+INSERT INTO protein ( name, quantity, quantity_type, calorie, type)
 VALUES  ('virsli',100, 'g',100,'breakfast');
 
-INSERT INTO protein (id, name, quantity, quantity_type, calorie, type) 
+INSERT INTO protein ( name, quantity, quantity_type, calorie, type)
+VALUES  ('marha',100, 'g',100,'lunch');
+
+INSERT INTO protein ( name, quantity, quantity_type, calorie, type)
+VALUES  ('csirkemell',100, 'g',100,'lunch');
+
+INSERT INTO protein ( name, quantity, quantity_type, calorie, type)
+VALUES  ('hal',100, 'g',100,'lunch');
+
+INSERT INTO protein ( name, quantity, quantity_type, calorie, type)
+VALUES  ('felvágott',100, 'g',100,'dinner');
+
+INSERT INTO protein ( name, quantity, quantity_type, calorie, type)
 VALUES  ('májkrém',100, 'g',100,'dinner');
 
-INSERT INTO protein (id, name, quantity, quantity_type, calorie, type) 
-VALUES  ('csirkemell',100, 'g',100,'all');
+INSERT INTO protein ( name, quantity, quantity_type, calorie, type)
+VALUES  ('tojás',100, 'g',100,'dinner');
 
 -- #####################################################
 
-INSERT INTO fruit (id, name, quantity, quantity_type, calorie, type) 
+INSERT INTO fruit ( name, quantity, quantity_type, calorie, type)
 VALUES  ('banán',100, 'g',100,'breakfast');
 
-INSERT INTO fruit (id, name, quantity, quantity_type, calorie, type) 
-VALUES  ('alma',100, 'g',100,'lunch');
+INSERT INTO fruit ( name, quantity, quantity_type, calorie, type)
+VALUES  ('alma',100, 'g',100,'breakfast');
 
-INSERT INTO fruit (id, name, quantity, quantity_type, calorie, type) 
+INSERT INTO fruit ( name, quantity, quantity_type, calorie, type)
 VALUES  ('narancs',100, 'g',100,'breakfast');
 
-INSERT INTO fruit (id, name, quantity, quantity_type, calorie, type) 
-VALUES  ('szeder',100, 'g',100,'dinner');
+INSERT INTO fruit ( name, quantity, quantity_type, calorie, type)
+VALUES  ('szeder',100, 'g',100,'lunch');
 
-INSERT INTO fruit (id, name, quantity, quantity_type, calorie, type) 
-VALUES  ('mandarin',100, 'g',100,'all');
+INSERT INTO fruit ( name, quantity, quantity_type, calorie, type)
+VALUES  ('mandarin',100, 'g',100,'lunch');
+
+INSERT INTO fruit ( name, quantity, quantity_type, calorie, type)
+VALUES  ('banán',100, 'g',100,'lunch');
+
+INSERT INTO fruit ( name, quantity, quantity_type, calorie, type)
+VALUES  ('narancs',100, 'g',100,'dinner');
+
+INSERT INTO fruit ( name, quantity, quantity_type, calorie, type)
+VALUES  ('meggy',100, 'g',100,'dinner');
+
+INSERT INTO fruit ( name, quantity, quantity_type, calorie, type)
+VALUES  ('alma',100, 'g',100,'dinner');
 
 -- #####################################################
 
-INSERT INTO vegetable (id, name, quantity, quantity_type, calorie, type) 
+INSERT INTO vegetable ( name, quantity, quantity_type, calorie, type)
 VALUES  ('paprika',100, 'g',100,'breakfast');
 
-INSERT INTO vegetable (id, name, quantity, quantity_type, calorie, type) 
-VALUES  ('salátamix',100, 'g',100,'lunch');
+INSERT INTO vegetable ( name, quantity, quantity_type, calorie, type)
+VALUES  ('uborka',100, 'g',100,'breakfast');
 
-INSERT INTO vegetable (id, name, quantity, quantity_type, calorie, type) 
+INSERT INTO vegetable ( name, quantity, quantity_type, calorie, type)
 VALUES  ('paradicsom',100, 'g',100,'breakfast');
 
-INSERT INTO vegetable (id, name, quantity, quantity_type, calorie, type) 
-VALUES  ('savanyúság',100, 'g',100,'dinner');
+INSERT INTO vegetable ( name, quantity, quantity_type, calorie, type)
+VALUES  ('savanyúság',100, 'g',100,'lunch');
 
-INSERT INTO vegetable (id, name, quantity, quantity_type, calorie, type) 
-VALUES  ('uborka',100, 'g',100,'all');
+INSERT INTO vegetable ( name, quantity, quantity_type, calorie, type)
+VALUES  ('uborka',100, 'g',100,'lunch');
+
+INSERT INTO vegetable ( name, quantity, quantity_type, calorie, type)
+VALUES  ('salátamix',100, 'g',100,'lunch');
+
+INSERT INTO vegetable ( name, quantity, quantity_type, calorie, type)
+VALUES  ('paradicsom',100, 'g',100,'dinner');
+
+INSERT INTO vegetable ( name, quantity, quantity_type, calorie, type)
+VALUES  ('cukkini',100, 'g',100,'dinner');
+
+INSERT INTO vegetable ( name, quantity, quantity_type, calorie, type)
+VALUES  ('uborka',100, 'g',100,'dinner');
 
 -- ######################################################
 
-INSERT INTO vitamin (id, name, quantity, type) 
+INSERT INTO vitamin ( name, quantity, type) 
 VALUES  ('barátcserje',1,'breakfast');
 
-INSERT INTO vitamin (id, name, quantity, type) 
+INSERT INTO vitamin ( name, quantity, type) 
 VALUES  ('multivitamin',1,'breakfast');
 
-INSERT INTO vitamin (id, name, quantity, type) 
+INSERT INTO vitamin ( name, quantity, type) 
 VALUES  ('omega3',1,'lunch');
 
-INSERT INTO vitamin (id, name, quantity, type) 
+INSERT INTO vitamin ( name, quantity, type) 
 VALUES  ('cink',1,'lunch');
 
-INSERT INTO vitamin (id, name, quantity, type) 
+INSERT INTO vitamin ( name, quantity, type) 
 VALUES  ('magnézium',2,'dinner');
+
 
 
 

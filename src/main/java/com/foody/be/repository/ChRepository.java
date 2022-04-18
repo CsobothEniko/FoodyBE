@@ -38,7 +38,13 @@ public interface ChRepository extends JpaRepository<Ch, Integer> {
     @Query("SELECT c FROM Ch c WHERE c.type='dinner'")
     List<Ch> getAllChByDinner();
 
+    @Query(value="SELECT * FROM Ch c WHERE type='breakfast' ORDER BY random() limit 1", nativeQuery = true)
+    Ch randomBreakfast();
+
     @Query(value="SELECT * FROM Ch c WHERE type='lunch' ORDER BY random() limit 1", nativeQuery = true)
-    Ch random();
+    Ch randomLunch();
+
+    @Query(value="SELECT * FROM Ch c WHERE type='dinner' ORDER BY random() limit 1", nativeQuery = true)
+    Ch randomDinner();
 
 }

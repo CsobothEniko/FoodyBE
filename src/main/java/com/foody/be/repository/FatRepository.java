@@ -21,4 +21,13 @@ public interface FatRepository extends JpaRepository<Fat, Integer> {
     //dinner selection:
     @Query("SELECT f FROM Fat f WHERE f.type='dinner'")
     List<Fat> getAllFatByDinner();
+
+    @Query(value="SELECT * FROM Fat WHERE type='breakfast' ORDER BY random() limit 1", nativeQuery = true)
+    Fat randomBreakfast();
+
+    @Query(value="SELECT * FROM Fat WHERE type='lunch' ORDER BY random() limit 1", nativeQuery = true)
+    Fat randomLunch();
+
+    @Query(value="SELECT * FROM Fat WHERE type='dinner' ORDER BY random() limit 1", nativeQuery = true)
+    Fat randomDinner();
 }

@@ -21,4 +21,13 @@ public interface VegetableRepository extends JpaRepository<Vegetable, Integer> {
     //dinner selection:
     @Query("SELECT v FROM Vegetable v WHERE v.type='dinner'")
     List<Vegetable> getAllVegetableByDinner();
+
+    @Query(value="SELECT * FROM Vegetable WHERE type='breakfast' ORDER BY random() limit 1", nativeQuery = true)
+    Vegetable randomBreakfast();
+
+    @Query(value="SELECT * FROM Vegetable WHERE type='lunch' ORDER BY random() limit 1", nativeQuery = true)
+    Vegetable randomLunch();
+
+    @Query(value="SELECT * FROM Vegetable WHERE type='dinner' ORDER BY random() limit 1", nativeQuery = true)
+    Vegetable randomDinner();
 }

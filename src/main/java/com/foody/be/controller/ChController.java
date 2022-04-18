@@ -14,7 +14,6 @@ import org.springframework.web.bind.annotation.*;
 import java.util.*;
 
 @RestController
-//@CrossOrigin(origins = "http://localhost:3000")
 @RequestMapping("/ch")
 public class ChController {
 
@@ -60,9 +59,9 @@ public class ChController {
         return new ResponseEntity<>(ch.getName(),HttpStatus.OK);
     }
 
-   @RequestMapping(value = "/random",method = RequestMethod.GET,produces = "application/json; charset=UTF-8")
+   @RequestMapping(value = "/randomBreakfast",method = RequestMethod.GET,produces = "application/json; charset=UTF-8")
     public ResponseEntity<String> random() throws JsonProcessingException {
-        Ch random = chRepository.random();
+        Ch random = chRepository.randomBreakfast();
 
         return new ResponseEntity<>(this.jsonMapper.writeValueAsString(random), HttpStatus.OK);
     }

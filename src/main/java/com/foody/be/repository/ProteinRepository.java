@@ -21,4 +21,13 @@ public interface ProteinRepository extends JpaRepository<Protein, Integer> {
     //dinner selection:
     @Query("SELECT p FROM Protein p WHERE p.type='dinner'")
     List<Protein> getAllProteinByDinner();
+
+    @Query(value="SELECT * FROM Protein WHERE type='breakfast' ORDER BY random() limit 1", nativeQuery = true)
+    Protein randomBreakfast();
+
+    @Query(value="SELECT * FROM Protein WHERE type='lunch' ORDER BY random() limit 1", nativeQuery = true)
+    Protein randomLunch();
+
+    @Query(value="SELECT * FROM Protein WHERE type='dinner' ORDER BY random() limit 1", nativeQuery = true)
+    Protein randomDinner();
 }
