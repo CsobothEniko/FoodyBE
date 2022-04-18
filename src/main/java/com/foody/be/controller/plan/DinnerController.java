@@ -42,16 +42,19 @@ public class DinnerController {
 
     @RequestMapping(value = "",method = RequestMethod.GET,produces = "application/json; charset=UTF-8")
     public ResponseEntity<String> random() throws JsonProcessingException {
-        Dinner dinner = new Dinner();
-        dinner.setChId(chRepository.randomBreakfast().getId());
-        dinner.setPrId(proteinRepository.randomBreakfast().getId());
-        dinner.setFatId(fatRepository.randomBreakfast().getId());
-        dinner.setFrId(fruitRepository.randomBreakfast().getId());
-        dinner.setVegId(vegetableRepository.randomBreakfast().getId());
-        dinner.setVitaminId1(5);
+        for(int i = 1; i < 8; i++ ){
+            Dinner dinner = new Dinner();
+            dinner.setChId(chRepository.randomBreakfast().getId());
+            dinner.setPrId(proteinRepository.randomBreakfast().getId());
+            dinner.setFatId(fatRepository.randomBreakfast().getId());
+            dinner.setFrId(fruitRepository.randomBreakfast().getId());
+            dinner.setVegId(vegetableRepository.randomBreakfast().getId());
+            dinner.setVitaminId1(5);
 
-        dinnerRepository.save(dinner);
+            dinnerRepository.save(dinner);
+        }
 
-        return new ResponseEntity<>(this.jsonMapper.writeValueAsString(dinner), HttpStatus.OK);
+
+        return new ResponseEntity<>(HttpStatus.OK);
     }
 }

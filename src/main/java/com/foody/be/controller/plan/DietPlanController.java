@@ -1,4 +1,4 @@
-package com.foody.be.controller;
+package com.foody.be.controller.plan;
 
 import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.ObjectMapper;
