@@ -1,7 +1,8 @@
 package com.foody.be.controller;
 
+import com.fasterxml.jackson.core.JsonProcessingException;
+import com.fasterxml.jackson.databind.ObjectMapper;
 import com.foody.be.dto.ChAndFat;
-import com.foody.be.dto.RandomCh;
 import com.foody.be.model.Ch;
 //import lombok.RequiredArgsConstructor;
 import com.foody.be.repository.ChRepository;
@@ -19,6 +20,13 @@ public class ChController {
 
     @Autowired
     ChRepository chRepository;
+
+    private final ObjectMapper jsonMapper;
+
+    public ChController(ObjectMapper jsonMapper) {
+        this.jsonMapper = jsonMapper;
+    }
+
 
     @GetMapping("/list")
     //@Transactional
@@ -42,7 +50,7 @@ public class ChController {
     }
 
     //@CrossOrigin(origins = "http://localhost:3000")
-    @RequestMapping(value = "/random",method = RequestMethod.GET,produces = "application/json; charset=UTF-8")
+    @RequestMapping(value = "/randomId",method = RequestMethod.GET,produces = "application/json; charset=UTF-8")
     public ResponseEntity<String> getRandomId() {
         Random random = new Random();
         Integer randomId = random.nextInt(2) +1;
@@ -50,6 +58,13 @@ public class ChController {
         System.out.println("ch: " + ch);
 
         return new ResponseEntity<>(ch.getName(),HttpStatus.OK);
+    }
+
+   @RequestMapping(value = "/random",method = RequestMethod.GET,produces = "application/json; charset=UTF-8")
+    public ResponseEntity<String> random() throws JsonProcessingException {
+        Ch random = chRepository.random();
+
+        return new ResponseEntity<>(this.jsonMapper.writeValueAsString(random), HttpStatus.OK);
     }
 
     @PostMapping("")

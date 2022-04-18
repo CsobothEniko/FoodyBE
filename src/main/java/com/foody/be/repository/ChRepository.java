@@ -18,11 +18,8 @@ public interface ChRepository extends JpaRepository<Ch, Integer> {
     //@Query("SELECT new com.foody.be.dto.ChAndFat(c.name, c.type) FROM Ch c")
     List<ChAndFat> getChAndFat();
 
-    //generating diet planner:
-    //DietPlan getPlan();
-
-    Random random = new Random();
-    Integer randomId = random.nextInt(2) +1;
+//    Random random = new Random();
+//    Integer randomId = random.nextInt(2) +1;
 
     /*@Query("SELECT new com.foody.be.dto.RandomCh(c.name, c.quantity,c.quantityType,c.calorie) FROM Ch c ")
     //       "WHERE c.type = 'breakfast' ORDER BY c.name ASC LIMIT 1")
@@ -40,5 +37,8 @@ public interface ChRepository extends JpaRepository<Ch, Integer> {
     //dinner selection:
     @Query("SELECT c FROM Ch c WHERE c.type='dinner'")
     List<Ch> getAllChByDinner();
+
+    @Query(value="SELECT * FROM Ch c WHERE type='lunch' ORDER BY random() limit 1", nativeQuery = true)
+    Ch random();
 
 }

@@ -4,17 +4,16 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7dd0462d-1fb4-4a6c-a8bb-1c4ad21146a1" name="Default Changelist" comment="target folder gitignore-hoz hozzáadása">
+    <list default="true" id="7dd0462d-1fb4-4a6c-a8bb-1c4ad21146a1" name="Default Changelist" comment="jsonMapper behúzása proteinhez + id-k javítása">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/foody/be/auth/controller/AuthController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/foody/be/auth/controller/AuthController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/foody/be/auth/repository/UserRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/foody/be/auth/repository/UserRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sql_scripts/create_base_tables.txt" beforeDir="false" afterPath="$PROJECT_DIR$/sql_scripts/create_base_tables.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/foody/be/controller/ChController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/foody/be/controller/ChController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/foody/be/controller/ProteinController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/foody/be/controller/ProteinController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/foody/be/model/Fruit.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/foody/be/model/Fruit.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/foody/be/model/Protein.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/foody/be/model/Protein.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/foody/be/model/Vegetable.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/foody/be/model/Vegetable.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/foody/be/model/Vitamin.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/foody/be/model/Vitamin.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/foody/be/repository/ChRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/foody/be/repository/ChRepository.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/foody/be/controller/ChController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/foody/be/controller/ChController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/foody/be/model/Fruit.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/foody/be/model/Fruit.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/foody/be/model/Protein.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/foody/be/model/Protein.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/foody/be/model/Vegetable.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/foody/be/model/Vegetable.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/foody/be/model/Vitamin.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/foody/be/model/Vitamin.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -68,6 +67,14 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitSEFilterConfiguration">
+    <file-type-list>
+      <filtered-out-file-type name="LOCAL_BRANCH" />
+      <filtered-out-file-type name="REMOTE_BRANCH" />
+      <filtered-out-file-type name="TAG" />
+      <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
+    </file-type-list>
   </component>
   <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
   <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER" />
@@ -195,7 +202,7 @@
       <workItem from="1646939849085" duration="3353000" />
       <workItem from="1647369220257" duration="6419000" />
       <workItem from="1648577940256" duration="7699000" />
-      <workItem from="1649098014221" duration="20887000" />
+      <workItem from="1649098014221" duration="27445000" />
     </task>
     <task id="LOCAL-00001" summary="DATABASE CRUD">
       <created>1644671102067</created>
@@ -267,7 +274,14 @@
       <option name="project" value="LOCAL" />
       <updated>1647373795122</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="jsonMapper behúzása proteinhez + id-k javítása">
+      <created>1649956268470</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1649956268471</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
@@ -307,7 +321,8 @@
     <MESSAGE value="random ch breakfast alapján" />
     <MESSAGE value="auth" />
     <MESSAGE value="frontend" />
-    <option name="LAST_COMMIT_MESSAGE" value="frontend" />
+    <MESSAGE value="jsonMapper behúzása proteinhez + id-k javítása" />
+    <option name="LAST_COMMIT_MESSAGE" value="jsonMapper behúzása proteinhez + id-k javítása" />
   </component>
   <component name="masterDetails">
     <states>
