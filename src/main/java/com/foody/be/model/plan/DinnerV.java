@@ -18,6 +18,9 @@ public class DinnerV {
     }
 
     @Id
+    @Column(name = "id")
+    private String id;
+
     @Column(name = "ch")
     private String ch;
 
@@ -32,6 +35,25 @@ public class DinnerV {
 
     @Column(name = "vegetable")
     private String vegetable;
+
+    @Column(name = "vitamin")
+    private String vitamin;
+
+    public String getId() {
+        return id;
+    }
+
+    public void setId(String id) {
+        this.id = id;
+    }
+
+    public String getVitamin() {
+        return vitamin;
+    }
+
+    public void setVitamin(String vitamin) {
+        this.vitamin = vitamin;
+    }
 
     public String getCh() {
         return this.ch;

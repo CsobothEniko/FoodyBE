@@ -21,4 +21,10 @@ public class BreakfastVController {
         List<BreakfastV> list = breakfastVRepository.findAll();
         return list;
     }
+
+    @GetMapping("/weekly")
+    public List<BreakfastV> weekly(){
+        List<BreakfastV> list = breakfastVRepository.last7();
+        return list;
+    }
 }

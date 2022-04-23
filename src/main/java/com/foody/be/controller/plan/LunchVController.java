@@ -21,4 +21,10 @@ public class LunchVController {
         List<LunchV> list = lunchVRepository.findAll();
         return list;
     }
+
+    @GetMapping("/weekly")
+    public List<LunchV> weekly(){
+        List<LunchV> list = lunchVRepository.last7();
+        return list;
+    }
 }

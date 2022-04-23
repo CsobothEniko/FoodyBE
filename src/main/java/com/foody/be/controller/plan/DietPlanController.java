@@ -91,7 +91,7 @@ public class DietPlanController {
             plan.setLunchId(lunchRepository.random().getId());
             plan.setDinnerId(dinnerRepository.random().getId());
 
-            //TODO: mindig menjen 1-től 7-ig!
+
             plan.setWeekday(i);
             dietPlanRepository.save(plan);
         }

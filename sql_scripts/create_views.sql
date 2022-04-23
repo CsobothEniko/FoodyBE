@@ -1,4 +1,5 @@
 create view breakfast_v(
+    id,
     ch,
     fat,
     protein,
@@ -9,6 +10,7 @@ create view breakfast_v(
 
 
     ) AS SELECT
+         row_number() OVER (PARTITION BY true) AS id,
          ch.name AS ch,
          fat.name AS fat,
          protein.name AS protein,
@@ -35,6 +37,7 @@ WHERE 1 = 1;
 --
 
 create view lunch_v(
+    id,
     ch,
     fat,
     protein,
@@ -44,6 +47,7 @@ create view lunch_v(
     vitamin2
 
     ) AS SELECT
+         row_number() OVER (PARTITION BY true) AS id,
          ch.name AS ch,
          fat.name AS fat,
          protein.name AS protein,
@@ -69,6 +73,7 @@ WHERE 1 = 1;
 --
 
 create view dinner_v(
+    id,
     ch,
     fat,
     protein,
@@ -77,6 +82,7 @@ create view dinner_v(
     vitamin
 
     ) AS SELECT
+         row_number() OVER (PARTITION BY true) AS id,
          ch.name AS ch,
          fat.name AS fat,
          protein.name AS protein,

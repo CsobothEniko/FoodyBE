@@ -22,4 +22,10 @@ public class DinnerVController {
         return list;
     }
 
+    @GetMapping("/weekly")
+    public List<DinnerV> weekly(){
+        List<DinnerV> list = dinnerVRepository.last7();
+        return list;
+    }
+
 }
