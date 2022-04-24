@@ -15,6 +15,7 @@ public class BreakfastV {
         this.protein = protein;
         this.fruit = fruit;
         this.vegetable = vegetable;
+
     }
     @Id
     @Column(name = "id")
@@ -40,6 +41,17 @@ public class BreakfastV {
 
     @Column(name = "vitamin2")
     private String vitamin2;
+
+    @Column(name = "weekday")
+    private String weekday;
+
+    public String getWeekday() {
+        return weekday;
+    }
+
+    public void setWeekday(String weekday) {
+        this.weekday = weekday;
+    }
 
     public String getId() {
         return id;

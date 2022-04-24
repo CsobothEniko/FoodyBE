@@ -6,17 +6,11 @@
   <component name="ChangeListManager">
     <list default="true" id="7dd0462d-1fb4-4a6c-a8bb-1c4ad21146a1" name="Default Changelist" comment="jsonMapper behúzása proteinhez + id-k javítása">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sql_scripts/create_views.sql" beforeDir="false" afterPath="$PROJECT_DIR$/sql_scripts/create_views.sql" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/foody/be/controller/plan/BreakfastVController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/foody/be/controller/plan/BreakfastVController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/foody/be/controller/plan/BreakfastController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/foody/be/controller/plan/BreakfastController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/foody/be/controller/plan/DietPlanController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/foody/be/controller/plan/DietPlanController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/foody/be/controller/plan/DinnerVController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/foody/be/controller/plan/DinnerVController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/foody/be/controller/plan/LunchVController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/foody/be/controller/plan/LunchVController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/foody/be/model/DietPlan.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/foody/be/model/DietPlan.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/foody/be/model/plan/Breakfast.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/foody/be/model/plan/Breakfast.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/foody/be/model/plan/BreakfastV.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/foody/be/model/plan/BreakfastV.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/foody/be/model/plan/DinnerV.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/foody/be/model/plan/DinnerV.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/foody/be/model/plan/LunchV.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/foody/be/model/plan/LunchV.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/foody/be/repository/plan/BreakfastVRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/foody/be/repository/plan/BreakfastVRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/foody/be/repository/plan/DinnerVRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/foody/be/repository/plan/DinnerVRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/foody/be/repository/plan/LunchVRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/foody/be/repository/plan/LunchVRepository.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -206,7 +200,7 @@
       <workItem from="1647369220257" duration="6419000" />
       <workItem from="1648577940256" duration="7699000" />
       <workItem from="1649098014221" duration="44040000" />
-      <workItem from="1650730199800" duration="4382000" />
+      <workItem from="1650730199800" duration="6547000" />
     </task>
     <task id="LOCAL-00001" summary="DATABASE CRUD">
       <created>1644671102067</created>

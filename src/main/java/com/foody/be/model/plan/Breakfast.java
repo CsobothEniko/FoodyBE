@@ -7,7 +7,7 @@ import javax.persistence.*;
 public class Breakfast {
     public Breakfast(){}
 
-    public Breakfast(Integer id, Integer chId, Integer fatId, Integer prId, Integer frId, Integer vegId, Integer vitaminId1, Integer vitaminid2) {
+    public Breakfast(Integer id, Integer chId, Integer fatId, Integer prId, Integer frId, Integer vegId, Integer vitaminId1, Integer vitaminid2, String day) {
         this.id = id;
         this.chId = chId;
         this.fatId = fatId;
@@ -16,6 +16,7 @@ public class Breakfast {
         this.vegId = vegId;
         this.vitaminId1 = vitaminId1;
         this.vitaminid2 = vitaminid2;
+        this.day = day;
     }
 
     @Id
@@ -43,6 +44,17 @@ public class Breakfast {
 
     @Column(name = "vitaminid2")
     private Integer vitaminid2;
+
+    @Column(name = "day")
+    private String day;
+
+    public String getDay() {
+        return day;
+    }
+
+    public void setDay(String day) {
+        this.day = day;
+    }
 
     public Integer getId() {
         return this.id;

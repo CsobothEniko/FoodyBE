@@ -6,7 +6,7 @@ import javax.persistence.*;
 @Table(name = "diet_plan")
 public class DietPlan {
 
-    public DietPlan(Integer id, Integer breakfastId, Integer lunchId, Integer dinnerId, Integer weekday) {
+    public DietPlan(Integer id, Integer breakfastId, Integer lunchId, Integer dinnerId, String weekday) {
         this.id = id;
         this.breakfastId = breakfastId;
         this.lunchId = lunchId;
@@ -31,7 +31,7 @@ public class DietPlan {
     private Integer dinnerId;
 
     @Column(name = "weekday")
-    private Integer weekday;
+    private String weekday;
 
     public Integer getId() {
         return this.id;
@@ -65,11 +65,11 @@ public class DietPlan {
         this.dinnerId = dinnerId;
     }
 
-    public Integer getWeekday() {
+    public String getWeekday() {
         return this.weekday;
     }
 
-    public void setWeekday(Integer weekday) {
+    public void setWeekday(String weekday) {
         this.weekday = weekday;
     }
 }
