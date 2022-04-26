@@ -4,9 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7dd0462d-1fb4-4a6c-a8bb-1c4ad21146a1" name="Default Changelist" comment="jsonMapper behúzása proteinhez + id-k javítása">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-    </list>
+    <list default="true" id="7dd0462d-1fb4-4a6c-a8bb-1c4ad21146a1" name="Default Changelist" comment="jsonMapper behúzása proteinhez + id-k javítása" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -195,7 +193,7 @@
       <workItem from="1647369220257" duration="6419000" />
       <workItem from="1648577940256" duration="7699000" />
       <workItem from="1649098014221" duration="44040000" />
-      <workItem from="1650730199800" duration="11041000" />
+      <workItem from="1650730199800" duration="11269000" />
     </task>
     <task id="LOCAL-00001" summary="DATABASE CRUD">
       <created>1644671102067</created>
