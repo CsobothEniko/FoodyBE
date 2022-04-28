@@ -43,7 +43,7 @@ public class BreakfastController {
 
     @RequestMapping(value = "",method = RequestMethod.GET,produces = "application/json; charset=UTF-8")
     public ResponseEntity<String> random() throws JsonProcessingException {
-        String[] days = {"Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"};
+
 
         for(int i = 1; i < 8; i++ ){
             Breakfast br = new Breakfast();
@@ -54,7 +54,7 @@ public class BreakfastController {
             br.setVegId(vegetableRepository.randomBreakfast().getId());
             br.setVitaminId1(1);
             br.setVitaminid2(2);
-            br.setDay(days[i-1]);
+
 
             breakfastRepository.save(br);
         }

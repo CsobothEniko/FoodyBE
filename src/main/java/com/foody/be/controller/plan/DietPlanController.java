@@ -65,7 +65,7 @@ public class DietPlanController {
         dietPlan.setBreakfastId(detailsOfDietPlan.getBreakfastId());
         dietPlan.setLunchId(detailsOfDietPlan.getLunchId());
         dietPlan.setDinnerId(detailsOfDietPlan.getDinnerId());
-        dietPlan.setWeekday(detailsOfDietPlan.getWeekday());
+
 
         final DietPlan updatedDietPlan = dietPlanRepository.save(dietPlan);
         return ResponseEntity.ok(updatedDietPlan);
@@ -85,15 +85,12 @@ public class DietPlanController {
     //weekly plan generating:
     @RequestMapping(value = "",method = RequestMethod.GET,produces = "application/json; charset=UTF-8")
     public ResponseEntity<String> random() throws JsonProcessingException {
-        String[] days = {"Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"};
+
         for(int i = 1; i < 8; i++){
             DietPlan plan = new DietPlan();
             plan.setBreakfastId(breakfastRepository.random().getId());
             plan.setLunchId(lunchRepository.random().getId());
             plan.setDinnerId(dinnerRepository.random().getId());
-
-
-            plan.setWeekday(days[i-1]);
             dietPlanRepository.save(plan);
         }
         return new ResponseEntity<>(HttpStatus.OK);

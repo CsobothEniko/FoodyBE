@@ -44,11 +44,11 @@ public class DinnerController {
     public ResponseEntity<String> random() throws JsonProcessingException {
         for(int i = 1; i < 8; i++ ){
             Dinner dinner = new Dinner();
-            dinner.setChId(chRepository.randomBreakfast().getId());
-            dinner.setPrId(proteinRepository.randomBreakfast().getId());
-            dinner.setFatId(fatRepository.randomBreakfast().getId());
-            dinner.setFrId(fruitRepository.randomBreakfast().getId());
-            dinner.setVegId(vegetableRepository.randomBreakfast().getId());
+            dinner.setChId(chRepository.randomDinner().getId());
+            dinner.setPrId(proteinRepository.randomDinner().getId());
+            dinner.setFatId(fatRepository.randomDinner().getId());
+            dinner.setFrId(fruitRepository.randomDinner().getId());
+            dinner.setVegId(vegetableRepository.randomDinner().getId());
             dinner.setVitaminId1(5);
 
             dinnerRepository.save(dinner);

@@ -4,7 +4,16 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7dd0462d-1fb4-4a6c-a8bb-1c4ad21146a1" name="Default Changelist" comment="jsonMapper behúzása proteinhez + id-k javítása" />
+    <list default="true" id="7dd0462d-1fb4-4a6c-a8bb-1c4ad21146a1" name="Default Changelist" comment="jsonMapper behúzása proteinhez + id-k javítása">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/foody/be/controller/plan/BreakfastController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/foody/be/controller/plan/BreakfastController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/foody/be/controller/plan/DietPlanController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/foody/be/controller/plan/DietPlanController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/foody/be/controller/plan/DinnerController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/foody/be/controller/plan/DinnerController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/foody/be/controller/plan/LunchController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/foody/be/controller/plan/LunchController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/foody/be/model/DietPlan.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/foody/be/model/DietPlan.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/foody/be/model/plan/Breakfast.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/foody/be/model/plan/Breakfast.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/foody/be/model/plan/BreakfastV.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/foody/be/model/plan/BreakfastV.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -100,9 +109,9 @@
     <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1642620670362" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/java/com/foody/be/model/plan" />
     <property name="nodejs_package_manager_path" value="npm" />
-    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.0" />
-    <property name="project.structure.side.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.2" />
     <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
   <component name="RunManager" selected="Spring Boot.start">
@@ -193,7 +202,8 @@
       <workItem from="1647369220257" duration="6419000" />
       <workItem from="1648577940256" duration="7699000" />
       <workItem from="1649098014221" duration="44040000" />
-      <workItem from="1650730199800" duration="11269000" />
+      <workItem from="1650730199800" duration="11875000" />
+      <workItem from="1651152882322" duration="2403000" />
     </task>
     <task id="LOCAL-00001" summary="DATABASE CRUD">
       <created>1644671102067</created>

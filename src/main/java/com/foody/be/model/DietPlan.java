@@ -6,12 +6,12 @@ import javax.persistence.*;
 @Table(name = "diet_plan")
 public class DietPlan {
 
-    public DietPlan(Integer id, Integer breakfastId, Integer lunchId, Integer dinnerId, String weekday) {
+    public DietPlan(Integer id, Integer breakfastId, Integer lunchId, Integer dinnerId) {
         this.id = id;
         this.breakfastId = breakfastId;
         this.lunchId = lunchId;
         this.dinnerId = dinnerId;
-        this.weekday = weekday;
+
     }
 
     public DietPlan(){}
@@ -30,8 +30,6 @@ public class DietPlan {
     @Column(name = "dinner_id")
     private Integer dinnerId;
 
-    @Column(name = "weekday")
-    private String weekday;
 
     public Integer getId() {
         return this.id;
@@ -65,11 +63,5 @@ public class DietPlan {
         this.dinnerId = dinnerId;
     }
 
-    public String getWeekday() {
-        return this.weekday;
-    }
 
-    public void setWeekday(String weekday) {
-        this.weekday = weekday;
-    }
 }

@@ -45,11 +45,11 @@ public class LunchController {
 
         for(int i = 1; i < 8; i++ ){
             Lunch lunch = new Lunch();
-            lunch.setChId(chRepository.randomBreakfast().getId());
-            lunch.setPrId(proteinRepository.randomBreakfast().getId());
-            lunch.setFatId(fatRepository.randomBreakfast().getId());
-            lunch.setFrId(fruitRepository.randomBreakfast().getId());
-            lunch.setVegId(vegetableRepository.randomBreakfast().getId());
+            lunch.setChId(chRepository.randomLunch().getId());
+            lunch.setPrId(proteinRepository.randomLunch().getId());
+            lunch.setFatId(fatRepository.randomLunch().getId());
+            lunch.setFrId(fruitRepository.randomLunch().getId());
+            lunch.setVegId(vegetableRepository.randomLunch().getId());
             lunch.setVitaminId1(3);
             lunch.setVitaminId2(4);
 
